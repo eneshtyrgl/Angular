@@ -1,0 +1,20 @@
+[
+    {
+        "name": "enes",
+        "gender": "Male",
+        "color": "rgb(87, 227, 137)",
+        "level": 1,
+        "gear": 0,
+        "power": 1,
+        "wins": 0
+    },
+    {
+        "name": "mert",
+        "gender": "Male",
+        "color": "rgb(98, 160, 234)",
+        "level": 1,
+        "gear": 0,
+        "power": 1,
+        "wins": 0
+    }
+]
