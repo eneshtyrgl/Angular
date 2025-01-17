@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: normal;
+}
+
+.header-text, .subheader-text, .normal-text {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.header-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.subheader-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.75em;
+    font-weight: 500;
+}
+
+.normal-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding: 30px 50px;
+}
+
+.container h3 {
+    text-align: center;
+} 
+
+.container h3 {
+    text-align: center;
+} 
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.background-img {
+    background-image: url('../img/lucy-joy-OtcBYzA22zM-unsplash.jpg');
+    background-size: cover;
+}
+
+.product-card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card-image img {
+    width: 50%;
+    border-radius: 8px;
+}
