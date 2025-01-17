@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: normal;
+}
+
+.img-bg-top, .img-bg-bottom {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-bg-top {
+    background-image: url('../img/scott-webb-e3dY8laAQtA-unsplash.jpg');
+}
+
+.img-bg-bottom {
+    background-image: url('../img/jeanne-rouillard-gTeetTswb5Y-unsplash.jpg');
+}
+
+.custom-bg {
+    background-color: rgba(24,24,16,255);
+}
+
+.header-text, .subheader-text, .normal-text {
+    padding: 10px;
+    color: white;
+}
+
+.header-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.subheader-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.75em;
+    font-weight: 500;
+}
+
+.normal-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.site-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+  
+.card-img-top:hover {
+    transform: scale(1.025);
+}
+
+@media (max-width: 768px) {
+  .site-title {
+    height: auto;
+    padding: 20px;
+  }
+
+  .header-text {
+    font-size: 2em;
+  }
+
+  .subheader-text {
+    font-size: 1.5em;
+  }
+
+  .normal-text {
+    font-size: 0.9em;
+  }
+}
+
