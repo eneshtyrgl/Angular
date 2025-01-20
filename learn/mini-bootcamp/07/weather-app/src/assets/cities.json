@@ -1,0 +1,7 @@
+[
+  { "name": "Istanbul", "weather": "Sunny", "temperature": 25 },
+  { "name": "Ankara", "weather": "Cloudy", "temperature": 20 },
+  { "name": "Eskişehir", "weather": "Rainy", "temperature": 18 },
+  { "name": "Adana", "weather": "Sunny", "temperature": 30 },
+  { "name": "Izmir", "weather": "Windy", "temperature": 22 }
+]

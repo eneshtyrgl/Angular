@@ -1,0 +1,13 @@
+<main>
+  <input [(ngModel)]="cityName" placeholder="Enter city name" />
+  <button (click)="searchCity()">Search</button>
+
+  <div *ngIf="cityInfo">
+    <h3>{{ cityInfo.name }}</h3>
+    <p>Weather: {{ cityInfo.weather }}</p>
+    <p>Temperature: {{ cityInfo.temperature }}</p>
+  </div>
+  <div *ngIf="cityNotFound">
+    <p>City not found.</p>
+  </div>
+</main>
