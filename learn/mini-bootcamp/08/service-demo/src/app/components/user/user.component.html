@@ -1,0 +1,12 @@
+<div>
+  <ul>
+    <li *ngFor="let user of users">{{ user.name }} ({{ user.age }})</li>
+  </ul>
+  <input #name placeholder="Name" />
+  <input #age type="number" placeholder="Age" />
+  <button
+    (click)="addUser(name.value, +age.value); name.value = ''; age.value = ''"
+  >
+    Add User
+  </button>
+</div>
