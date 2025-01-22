@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  color: #4caf50;
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a.active {
+  background-color: #4caf50;
+  border-radius: 8px;
+}
+
+nav ul li a:hover {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 8px;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Component Specific Styles */
+app-root {
+  display: block;
+  padding: 20px;
+}
+
+app-home,
+app-about,
+app-contact,
+app-user-profile {
+  margin: 30px auto;
+  max-width: 800px;
+}
