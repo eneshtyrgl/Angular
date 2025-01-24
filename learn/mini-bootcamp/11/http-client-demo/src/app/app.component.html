@@ -1,0 +1,18 @@
+<main class="main">
+  <div class="header">
+    <h1>{{ title }}</h1>
+    <h2>My First GET HTTP Request on Angular!</h2>
+  </div>
+
+  <div class="row posts">
+    <p>Total Posts: {{ data.length }}</p>
+    <ul>
+      <li *ngFor="let post of data">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.body }}</p>
+      </li>
+    </ul>
+  </div>
+</main>
+
+<router-outlet />
