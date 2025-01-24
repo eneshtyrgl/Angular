@@ -1,0 +1,37 @@
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+  <div>
+    <label for="username">Username</label>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      ngModel
+      required
+      #username="ngModel"
+    />
+    <div *ngIf="username.invalid && (username.dirty || username.touched)">
+      Username is required
+    </div>
+  </div>
+
+  <div>
+    <label for="password">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      ngModel
+      required
+      minlength="6"
+      #password="ngModel"
+    />
+    <div *ngIf="password.invalid && (password.dirty || password.touched)">
+      <div *ngIf="password.errors?.['required']">Password is required</div>
+      <div *ngIf="password.errors?.['minlength']">
+        Password must be at least 6 characters
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="loginForm.invalid">Login</button>
+</form>
