@@ -1,0 +1,13 @@
+<form [formGroup]="playerForm" (ngSubmit)="onSubmit()" class="app-container">
+  <input type="text" formControlName="name" placeholder="Player Name" />
+  <div class="normal-text">
+    <label>
+      <input type="radio" formControlName="gender" value="Male" /> Male
+    </label>
+    <label>
+      <input type="radio" formControlName="gender" value="Female" /> Female
+    </label>
+  </div>
+  <input type="color" formControlName="color" class="color-input" />
+  <button type="submit" [disabled]="!playerForm.valid">Add Player</button>
+</form>

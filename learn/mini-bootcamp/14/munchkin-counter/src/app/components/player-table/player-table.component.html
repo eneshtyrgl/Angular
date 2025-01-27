@@ -1,0 +1,35 @@
+<div class="app-container table-text">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Level</th>
+        <th>Gear</th>
+        <th>Power</th>
+        <th>Wins</th>
+      </tr>
+    </thead>
+    <tbody [@listAnimation]>
+      <tr
+        *ngFor="let player of players$ | async; let i = index"
+        [attr.draggable]="true"
+        (dragstart)="onDragStart($event, i)"
+        (dragover)="onDragOver($event)"
+        (drop)="onDrop($event, i)"
+      >
+        <td [style.color]="player.color">{{ player.name }}</td>
+        <td
+          [style.color]="player.gender === 'Male' ? '#68EBFD' : '#FFC0CB'"
+          (click)="toggleGender(i)"
+        >
+          {{ player.gender }}
+        </td>
+        <td (click)="editLevel(i)" (wheel)="changeLevel($event, i)">{{ player.level }}</td>
+        <td (click)="editGear(i)" (wheel)="changeGear($event, i)">{{ player.gear }}</td>
+        <td (click)="removePlayer(i)">{{ player.power }}</td>
+        <td (click)="incrementWins(i)" (wheel)="changeWins($event, i)">{{ player.wins }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
